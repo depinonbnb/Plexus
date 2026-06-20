@@ -1,0 +1,24 @@
+{
+  "name": "plexus",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plexus — uncensored, private, decentralized AI inference network on BNB Chain.",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "keeper": "tsx src/lib/keeper/run.ts",
+    "demo:slice": "tsx tests/thin-slice.ts",
+    "test": "node --test --import tsx tests/*.test.ts",
+    "contracts:build": "cd contracts && forge build",
+    "contracts:test": "cd contracts && forge test -vvv"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4.21.0",
+    "typescript": "^5.6.0"
+  }
+}

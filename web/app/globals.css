@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 50% -10%, rgba(34, 211, 168, 0.08), transparent 60%),
+    radial-gradient(900px 500px at 90% 10%, rgba(59, 130, 246, 0.06), transparent 55%), #05060a;
+  color: #e7eaf0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* faint mesh grid behind the hero */
+.mesh-grid {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 75%);
+}
+
+.glow-text {
+  text-shadow: 0 0 24px rgba(34, 211, 168, 0.35);
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+  border: 1px solid #1a1e2b;
+  border-radius: 16px;
+}
